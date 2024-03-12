@@ -34,16 +34,20 @@ class StartScreen extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               OutlinedButton(
-                  onPressed: () {
-                    debugPrint("Button Tap Received");
-                  },
-                  child: const Text(
-                    "Start",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20,
-                    ),
-                  ))
+                onPressed: () {
+                  debugPrint("Button Tap Received");
+                },
+                style: OutlinedButton.styleFrom(
+                  side: const BorderSide(color: Colors.white, width: 2.0),
+                ),
+                child: const Text(
+                  "Start",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                  ),
+                ),
+              ),
             ]),
           ),
         ),
